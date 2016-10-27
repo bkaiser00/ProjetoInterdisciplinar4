@@ -40,13 +40,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Categoria.cs" />
     <Compile Include="Cidade.cs" />
     <Compile Include="Comentario.cs" />
     <Compile Include="Coordenada.cs" />
+    <Compile Include="Deslike.cs" />
     <Compile Include="Estado.cs" />
     <Compile Include="Imagem.cs" />
     <Compile Include="Localizacao.cs" />
+    <Compile Include="Notificacao.cs" />
     <Compile Include="OrgaoResponsavel.cs" />
     <Compile Include="Postagem.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

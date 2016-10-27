@@ -6,20 +6,21 @@ using System.Threading.Tasks;
 
 namespace Modelos
 {
-    class Categoria
+    class Deslike
     {
         private int id;
-        private string tipo;
+        private Usuario user;
+        private Postagem post;
 
-        //Construtor da Classe
-        public Categoria(int id, string tipo)
+        //Construtores
+        public Deslike(int id, Usuario user)
         {
             this.id = id;
-            this.tipo = tipo;
+            this.user = user;
         }
 
         //Métodos de Acesso
         public int Id { get; }
-        public string Tipo { get; }
+        public string Path_img { get; }
     }
 }

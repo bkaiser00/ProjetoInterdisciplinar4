@@ -13,27 +13,27 @@ namespace Modelos
         private string contato;
         private string email;
         private Cidade city;
-        private Categoria cat;
+        private Notificacao not;
 
         //Construtor da Classe
-        public OrgaoResponsavel(int id, string nome, string email, Cidade city, Categoria cat)
+        public OrgaoResponsavel(int id, string nome, string email, Cidade city, Notificacao not)
         {
             this.id = id;
             this.nome = nome;
             contato = null;
             this.email = email;
             this.city = city;
-            this.cat = cat;
+            this.not = not;
         }
 
-        public OrgaoResponsavel(int id, string nome, string contato, string email, Cidade city, Categoria cat)
+        public OrgaoResponsavel(int id, string nome, string contato, string email, Cidade city, Notificacao not)
         {
             this.id = id;
             this.nome = nome;
             this.contato = contato;
             this.email = email;
             this.city = city;
-            this.cat = cat;
+            this.not = not;
         }
 
         //Métodos de Acesso
@@ -42,6 +42,6 @@ namespace Modelos
         public string Contato { get; }
         public string Email { get; }
         public Cidade City { get; }
-        public Categoria Cat { get; }
+        public Notificacao Not { get; }
     }
 }

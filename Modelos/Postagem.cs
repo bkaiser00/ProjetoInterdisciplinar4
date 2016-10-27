@@ -9,20 +9,21 @@ namespace Modelos
     class Postagem
     {
         private int id;
-        private int deslike;
+        private Usuario user;
         private Imagem img;
-        private Categoria cat;
+        private Notificacao not;
         private Localizacao locate;
+        private Deslike deslike;
         //Não coloquei usuário, pq não vi necessidade dele na classe, se for necessário acrescento depois.
         //Ver se precisa criar lista de objetos da classe comentário nessa classe
 
         //Construtores da Classe
-        public Postagem(int id, int deslike, Imagem img, Categoria cat, Localizacao locate)
+        public Postagem(int id, Deslike deslike, Imagem img, Notificacao not, Localizacao locate)
         {
             this.id = id;
             this.deslike = deslike;
             this.img = img;
-            this.cat = cat;
+            this.not = not;
             this.locate = locate;
         }
 
@@ -31,7 +32,8 @@ namespace Modelos
         public int Deslike { get; }
         public Imagem Img { get; }
         public Usuario User { get; }
-        public Categoria Cat { get; }
+        public Notificacao Not { get; }
         public Localizacao Locate { get; }
+        public Deslike Deslike { get; }
     }
 }
