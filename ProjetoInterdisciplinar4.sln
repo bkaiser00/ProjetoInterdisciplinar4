@@ -3,11 +3,30 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "Modelos", "Modelos\Modelos.shproj", "{6F613229-A736-41ED-9CAF-F82A190F0017}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Modelos", "Modelos\Modelos.csproj", "{6FF5E49D-4598-4818-BB33-C223BF735645}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CamadaPersistencia", "CamadaPersistencia\CamadaPersistencia.csproj", "{2F6B9329-8813-45C1-8615-31D866416621}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CamadaRN", "CamadaRN\CamadaRN.csproj", "{D3385778-92F4-4252-98E0-0606FC94BBC9}"
 EndProject
 Global
-	GlobalSection(SharedMSBuildProjectFiles) = preSolution
-		Modelos\Modelos.projitems*{6f613229-a736-41ed-9caf-f82a190f0017}*SharedItemsImports = 13
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6FF5E49D-4598-4818-BB33-C223BF735645}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6FF5E49D-4598-4818-BB33-C223BF735645}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6FF5E49D-4598-4818-BB33-C223BF735645}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6FF5E49D-4598-4818-BB33-C223BF735645}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2F6B9329-8813-45C1-8615-31D866416621}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2F6B9329-8813-45C1-8615-31D866416621}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2F6B9329-8813-45C1-8615-31D866416621}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2F6B9329-8813-45C1-8615-31D866416621}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D3385778-92F4-4252-98E0-0606FC94BBC9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D3385778-92F4-4252-98E0-0606FC94BBC9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D3385778-92F4-4252-98E0-0606FC94BBC9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D3385778-92F4-4252-98E0-0606FC94BBC9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
