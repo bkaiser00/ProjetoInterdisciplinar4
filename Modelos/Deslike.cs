@@ -13,14 +13,16 @@ namespace Modelos
         private Postagem post;
 
         //Construtores
-        public Deslike(int id, Usuario user)
+        public Deslike(int id, Usuario user, Postagem post)
         {
             this.id = id;
             this.user = user;
+            this.post = post;
         }
 
         //Métodos de Acesso
         public int Id { get; }
-        public string Path_img { get; }
+        public Usuario User { get; }
+        public Postagem Post { get; }
     }
 }
