@@ -1,0 +1,5 @@
+C:\Users\joaon\Source\Repos\ProjetoInterdisciplinar4\Modelos\bin\Debug\Modelos.dll
+C:\Users\joaon\Source\Repos\ProjetoInterdisciplinar4\Modelos\bin\Debug\Modelos.pdb
+C:\Users\joaon\Source\Repos\ProjetoInterdisciplinar4\Modelos\obj\Debug\Modelos.csprojResolveAssemblyReference.cache
+C:\Users\joaon\Source\Repos\ProjetoInterdisciplinar4\Modelos\obj\Debug\Modelos.dll
+C:\Users\joaon\Source\Repos\ProjetoInterdisciplinar4\Modelos\obj\Debug\Modelos.pdb

@@ -1,0 +1,9 @@
+C:\Users\joaon\Source\Repos\ProjetoInterdisciplinar4\Testes\bin\Debug\Testes.exe.config
+C:\Users\joaon\Source\Repos\ProjetoInterdisciplinar4\Testes\bin\Debug\Testes.exe
+C:\Users\joaon\Source\Repos\ProjetoInterdisciplinar4\Testes\bin\Debug\Testes.pdb
+C:\Users\joaon\Source\Repos\ProjetoInterdisciplinar4\Testes\bin\Debug\Persistencia.dll
+C:\Users\joaon\Source\Repos\ProjetoInterdisciplinar4\Testes\bin\Debug\Oracle.ManagedDataAccess.dll
+C:\Users\joaon\Source\Repos\ProjetoInterdisciplinar4\Testes\bin\Debug\Persistencia.pdb
+C:\Users\joaon\Source\Repos\ProjetoInterdisciplinar4\Testes\obj\Debug\Testes.csprojResolveAssemblyReference.cache
+C:\Users\joaon\Source\Repos\ProjetoInterdisciplinar4\Testes\obj\Debug\Testes.exe
+C:\Users\joaon\Source\Repos\ProjetoInterdisciplinar4\Testes\obj\Debug\Testes.pdb

@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Persistencia
 {
-    class Conexao
+    public class Conexao
     {
         public string Conn()
         {

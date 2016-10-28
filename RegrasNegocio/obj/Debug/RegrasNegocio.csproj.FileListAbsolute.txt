@@ -1,0 +1,5 @@
+C:\Users\joaon\Source\Repos\ProjetoInterdisciplinar4\RegrasNegocio\bin\Debug\RegrasNegocio.dll
+C:\Users\joaon\Source\Repos\ProjetoInterdisciplinar4\RegrasNegocio\bin\Debug\RegrasNegocio.pdb
+C:\Users\joaon\Source\Repos\ProjetoInterdisciplinar4\RegrasNegocio\obj\Debug\RegrasNegocio.csprojResolveAssemblyReference.cache
+C:\Users\joaon\Source\Repos\ProjetoInterdisciplinar4\RegrasNegocio\obj\Debug\RegrasNegocio.dll
+C:\Users\joaon\Source\Repos\ProjetoInterdisciplinar4\RegrasNegocio\obj\Debug\RegrasNegocio.pdb

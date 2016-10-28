@@ -1,0 +1,7 @@
+C:\Users\joaon\Source\Repos\ProjetoInterdisciplinar4\Persistencia\bin\Debug\Persistencia.dll.config
+C:\Users\joaon\Source\Repos\ProjetoInterdisciplinar4\Persistencia\bin\Debug\Persistencia.dll
+C:\Users\joaon\Source\Repos\ProjetoInterdisciplinar4\Persistencia\bin\Debug\Persistencia.pdb
+C:\Users\joaon\Source\Repos\ProjetoInterdisciplinar4\Persistencia\bin\Debug\Oracle.ManagedDataAccess.dll
+C:\Users\joaon\Source\Repos\ProjetoInterdisciplinar4\Persistencia\obj\Debug\Persistencia.csprojResolveAssemblyReference.cache
+C:\Users\joaon\Source\Repos\ProjetoInterdisciplinar4\Persistencia\obj\Debug\Persistencia.dll
+C:\Users\joaon\Source\Repos\ProjetoInterdisciplinar4\Persistencia\obj\Debug\Persistencia.pdb
