@@ -9,14 +9,43 @@ namespace Persistencia
 {
     public class Conexao
     {
+        string connectionString;
+        OracleConnection conn;
+        OracleCommand command;
+
+        public Conexao(string connectionString)
+        {
+            this.connectionString = connectionString;
+            conn = new OracleConnection();
+            command = new OracleCommand();
+        }
+
         public string Conn()
         {
-            OracleCommand oComando = new OracleCommand();
-            oComando.Connection = new OracleConnection("Data Source=localhost:1521:xe;Persist Security Info=True;User ID=system;Password=123456");
-            oComando.CommandText = "select sysdate from dual";
-            oComando.CommandType = System.Data.CommandType.Text;
-            oComando.Connection.Open();
-            return oComando.ExecuteScalar().ToString();
+            try
+            {
+                conn.ConnectionString = connectionString;
+                conn.Open();
+                return "Conexão Estabelecida com sucesso!";
+            }
+            catch
+            {
+                return "Erro ao tentar estaber conexão.";
+            }
+        }
+
+        public string Query(string query)
+        {
+            try
+            {
+                OracleCommand command = conn.CreateCommand();
+                command.CommandText = query;
+                return command.ExecuteScalar().ToString();
+            }
+            catch
+            {
+                return "Erro ao tentar exucutar a query: \""+ query + "\".";
+            }
         }
     }
 }
