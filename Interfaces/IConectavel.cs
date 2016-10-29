@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Interfaces
 {
-    public interface IConnectable
+    public interface IConectavel
     {
         string Conn(); 
         string Disconnect();

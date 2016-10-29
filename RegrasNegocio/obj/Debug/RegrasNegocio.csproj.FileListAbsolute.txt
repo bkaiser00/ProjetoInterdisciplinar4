@@ -3,3 +3,8 @@ C:\Users\joaon\Source\Repos\ProjetoInterdisciplinar4\RegrasNegocio\bin\Debug\Reg
 C:\Users\joaon\Source\Repos\ProjetoInterdisciplinar4\RegrasNegocio\obj\Debug\RegrasNegocio.csprojResolveAssemblyReference.cache
 C:\Users\joaon\Source\Repos\ProjetoInterdisciplinar4\RegrasNegocio\obj\Debug\RegrasNegocio.dll
 C:\Users\joaon\Source\Repos\ProjetoInterdisciplinar4\RegrasNegocio\obj\Debug\RegrasNegocio.pdb
+C:\Users\bruno\Documents\Visual Studio 2015\Projects\ProjetoInterdisciplinar4\RegrasNegocio\bin\Debug\RegrasNegocio.dll
+C:\Users\bruno\Documents\Visual Studio 2015\Projects\ProjetoInterdisciplinar4\RegrasNegocio\bin\Debug\RegrasNegocio.pdb
+C:\Users\bruno\Documents\Visual Studio 2015\Projects\ProjetoInterdisciplinar4\RegrasNegocio\obj\Debug\RegrasNegocio.csprojResolveAssemblyReference.cache
+C:\Users\bruno\Documents\Visual Studio 2015\Projects\ProjetoInterdisciplinar4\RegrasNegocio\obj\Debug\RegrasNegocio.dll
+C:\Users\bruno\Documents\Visual Studio 2015\Projects\ProjetoInterdisciplinar4\RegrasNegocio\obj\Debug\RegrasNegocio.pdb
