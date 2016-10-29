@@ -14,3 +14,12 @@ C:\Users\bruno\Documents\Visual Studio 2015\Projects\ProjetoInterdisciplinar4\Pe
 C:\Users\bruno\Documents\Visual Studio 2015\Projects\ProjetoInterdisciplinar4\Persistencia\obj\Debug\Persistencia.pdb
 C:\Users\bruno\Documents\Visual Studio 2015\Projects\ProjetoInterdisciplinar4\Persistencia\bin\Debug\Interfaces.dll
 C:\Users\bruno\Documents\Visual Studio 2015\Projects\ProjetoInterdisciplinar4\Persistencia\bin\Debug\Interfaces.pdb
+C:\Users\joaon\Source\Repos\ProjetoInterdisciplinar42\Persistencia\obj\Debug\Persistencia.csprojResolveAssemblyReference.cache
+C:\Users\joaon\Source\Repos\ProjetoInterdisciplinar42\Persistencia\bin\Debug\Persistencia.dll.config
+C:\Users\joaon\Source\Repos\ProjetoInterdisciplinar42\Persistencia\bin\Debug\Persistencia.dll
+C:\Users\joaon\Source\Repos\ProjetoInterdisciplinar42\Persistencia\bin\Debug\Persistencia.pdb
+C:\Users\joaon\Source\Repos\ProjetoInterdisciplinar42\Persistencia\bin\Debug\Interfaces.dll
+C:\Users\joaon\Source\Repos\ProjetoInterdisciplinar42\Persistencia\bin\Debug\Oracle.ManagedDataAccess.dll
+C:\Users\joaon\Source\Repos\ProjetoInterdisciplinar42\Persistencia\bin\Debug\Interfaces.pdb
+C:\Users\joaon\Source\Repos\ProjetoInterdisciplinar42\Persistencia\obj\Debug\Persistencia.dll
+C:\Users\joaon\Source\Repos\ProjetoInterdisciplinar42\Persistencia\obj\Debug\Persistencia.pdb

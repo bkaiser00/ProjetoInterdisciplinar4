@@ -8,27 +8,27 @@ using Interfaces;
 
 namespace Persistencia 
 {
-    public class Conexao : IConectavel
+    public class DB : IConectavel
     {
         private string connectionString;
         private OracleConnection conn;
         
         //Construtores da classe
-        public Conexao()
+        public DB()
         {
             connectionString = "Data Source=localhost:1521:xe;Persist Security Info=True;User ID=user_owner;Password=123456";
             conn = new OracleConnection();
         }
 
-        public Conexao(string connectionString)
+        public DB(string connectionString)
         {
             this.connectionString = connectionString;
             conn = new OracleConnection();
         }
 
-        public Conexao(string user, string password) 
+        public DB(string dataSource, string user, string password) 
         {
-            this.connectionString = "Data Source=localhost:1521:xe;Persist Security Info=True;User ID="+user+";Password="+password;
+            this.connectionString = "Data Source=" + dataSource + ";Persist Security Info=True;User ID="+user+";Password="+password;
             conn = new OracleConnection();
         }
 
@@ -48,6 +48,17 @@ namespace Persistencia
             {
                 return "Erro ao tentar estaber conexão.";
             }
+        }
+
+        /// <summary>
+        /// Desfaz a conexão com o banco de dados.
+        /// </summary>
+        /// <returns>Uma string de confirmação.</returns>
+        public string Disconnect()
+        {
+            conn.Close();
+            conn.Dispose();
+            return "Desconectado!";
         }
 
         /// <summary>
@@ -99,6 +110,7 @@ namespace Persistencia
                 reader.Close();
                 reader.Dispose();
                 command.Dispose();
+
                 Disconnect();
 
                 return lista;
@@ -110,15 +122,109 @@ namespace Persistencia
             }
         }
 
-        /// <summary>
-        /// Desfaz a conexão com o banco de dados.
-        /// </summary>
-        /// <returns>Uma string de confirmação.</returns>
-        public string Disconnect()
+        public bool Insert(string tabela, string dados)
         {
-            conn.Close();
-            conn.Dispose();
-            return "Desconectado!";
+            try
+            {
+                Conn();
+
+                OracleCommand command = new OracleCommand();
+                command.CommandText = "insert into " + tabela + " values (" + dados + ")";
+                command.ExecuteNonQuery();
+                command.Dispose();
+
+                Disconnect();
+
+                return true;
+            }
+            catch
+            {
+                return false;
+            }
+        }
+
+        public bool Insert(string tabela, string colunas, string dados)
+        {
+            try
+            {
+                Conn();
+
+                OracleCommand command = new OracleCommand();
+                command.CommandText = "insert into " + tabela + " (" + colunas + ") values (" + dados + ")";
+                command.ExecuteNonQuery();
+                command.Dispose();
+
+                Disconnect();
+
+                return true;
+            }
+            catch
+            {
+                return false;
+            }
+        }
+
+        public bool Update(string tabela, string dados)
+        {
+            try
+            {
+                Conn();
+
+                OracleCommand command = new OracleCommand();
+                command.CommandText = "update " + tabela + " set (" + dados + ")";
+                command.ExecuteNonQuery();
+                command.Dispose();
+
+                Disconnect();
+
+                return true;
+            }
+            catch
+            {
+                return false;
+            }
+        }
+
+        public bool Update(string tabela, string dados, string condicao)
+        {
+            try
+            {
+                Conn();
+
+                OracleCommand command = new OracleCommand();
+                command.CommandText = "update " + tabela + " set (" + dados + ") where " + condicao;
+                command.ExecuteNonQuery();
+                command.Dispose();
+
+                Disconnect();
+
+                return true;
+            }
+            catch
+            {
+                return false;
+            }
+        }
+
+        public bool Delete(string tabela, string condicao)
+        {
+            try
+            {
+                Conn();
+
+                OracleCommand command = new OracleCommand();
+                command.CommandText = "delete " + tabela + " where " + condicao;
+                command.ExecuteNonQuery();
+                command.Dispose();
+
+                Disconnect();
+
+                return true;
+            }
+            catch
+            {
+                return false;
+            }
         }
     }
 }

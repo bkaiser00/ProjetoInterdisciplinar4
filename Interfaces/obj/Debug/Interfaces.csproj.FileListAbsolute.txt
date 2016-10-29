@@ -3,3 +3,8 @@ C:\Users\bruno\Documents\Visual Studio 2015\Projects\ProjetoInterdisciplinar4\In
 C:\Users\bruno\Documents\Visual Studio 2015\Projects\ProjetoInterdisciplinar4\Interfaces\obj\Debug\Interfaces.dll
 C:\Users\bruno\Documents\Visual Studio 2015\Projects\ProjetoInterdisciplinar4\Interfaces\obj\Debug\Interfaces.pdb
 C:\Users\bruno\Documents\Visual Studio 2015\Projects\ProjetoInterdisciplinar4\Interfaces\obj\Debug\Interfaces.csprojResolveAssemblyReference.cache
+C:\Users\joaon\Source\Repos\ProjetoInterdisciplinar42\Interfaces\bin\Debug\Interfaces.dll
+C:\Users\joaon\Source\Repos\ProjetoInterdisciplinar42\Interfaces\bin\Debug\Interfaces.pdb
+C:\Users\joaon\Source\Repos\ProjetoInterdisciplinar42\Interfaces\obj\Debug\Interfaces.csprojResolveAssemblyReference.cache
+C:\Users\joaon\Source\Repos\ProjetoInterdisciplinar42\Interfaces\obj\Debug\Interfaces.dll
+C:\Users\joaon\Source\Repos\ProjetoInterdisciplinar42\Interfaces\obj\Debug\Interfaces.pdb

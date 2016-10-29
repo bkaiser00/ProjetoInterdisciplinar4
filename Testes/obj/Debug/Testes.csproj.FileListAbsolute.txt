@@ -18,3 +18,14 @@ C:\Users\bruno\Documents\Visual Studio 2015\Projects\ProjetoInterdisciplinar4\Te
 C:\Users\bruno\Documents\Visual Studio 2015\Projects\ProjetoInterdisciplinar4\Testes\obj\Debug\Testes.csprojResolveAssemblyReference.cache
 C:\Users\bruno\Documents\Visual Studio 2015\Projects\ProjetoInterdisciplinar4\Testes\bin\Debug\Interfaces.dll
 C:\Users\bruno\Documents\Visual Studio 2015\Projects\ProjetoInterdisciplinar4\Testes\bin\Debug\Interfaces.pdb
+C:\Users\joaon\Source\Repos\ProjetoInterdisciplinar42\Testes\bin\Debug\Testes.exe.config
+C:\Users\joaon\Source\Repos\ProjetoInterdisciplinar42\Testes\obj\Debug\Testes.exe
+C:\Users\joaon\Source\Repos\ProjetoInterdisciplinar42\Testes\obj\Debug\Testes.pdb
+C:\Users\joaon\Source\Repos\ProjetoInterdisciplinar42\Testes\bin\Debug\Testes.exe
+C:\Users\joaon\Source\Repos\ProjetoInterdisciplinar42\Testes\bin\Debug\Testes.pdb
+C:\Users\joaon\Source\Repos\ProjetoInterdisciplinar42\Testes\bin\Debug\Persistencia.dll
+C:\Users\joaon\Source\Repos\ProjetoInterdisciplinar42\Testes\bin\Debug\Interfaces.dll
+C:\Users\joaon\Source\Repos\ProjetoInterdisciplinar42\Testes\bin\Debug\Oracle.ManagedDataAccess.dll
+C:\Users\joaon\Source\Repos\ProjetoInterdisciplinar42\Testes\bin\Debug\Persistencia.pdb
+C:\Users\joaon\Source\Repos\ProjetoInterdisciplinar42\Testes\bin\Debug\Interfaces.pdb
+C:\Users\joaon\Source\Repos\ProjetoInterdisciplinar42\Testes\obj\Debug\Testes.csprojResolveAssemblyReference.cache

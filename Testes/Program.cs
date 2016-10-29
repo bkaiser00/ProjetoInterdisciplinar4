@@ -11,9 +11,11 @@ namespace Testes
     {
         static void Main(string[] args)
         {
-            Conexao conexao = new Conexao("data source=localhost:1521:xe;persist security info=true;user id=system;password=12345");
+            DB conexao = new DB("localhost:1521:xe", "system", "123456");
             Console.WriteLine(conexao.Conn());
             Console.WriteLine(conexao.Query("select sysdate from dual"));
+
+            Console.ReadKey();
         }
     }
 }
