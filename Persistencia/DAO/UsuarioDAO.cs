@@ -8,7 +8,7 @@ using Oracle.ManagedDataAccess.Client;
 
 namespace Persistencia
 {
-    public class UsuarioDAO : IPersist
+    public class UsuarioDAO : IManipulavel
     {
         DB banco = new DB();
 
@@ -19,6 +19,41 @@ namespace Persistencia
          * Os métodos criados a baixo são os da assinatura da interface. São métodos basicos para toda
          * classe DAO. Ao criar uma classe DAO basta copiar, colar e alterar o nome da tabela.
          */
+
+        public string SelectUsuario(string atribute, string value)
+        {
+            string dados = string.Empty;
+            OracleCommand command = conn.CreateCommand();
+            command.CommandText = "select * from usuario where " + atribute + " = " + value;
+
+            banco.Conn();
+
+            try
+            {
+                OracleDataReader reader = command.ExecuteReader();
+                if (reader.HasRows)
+                {
+                    dados = ("{0};{1};{2};{3};{4};{5}",reader.GetInt32(0),reader.GetString(1),reader.GetString(2),reader.GetString(3),reader.GetString(4),reader.GetString(5);
+                }
+                else
+                {
+                    dados = "Nenhum dado encontrado!");
+                }
+
+                reader.Close();
+                reader.Dispose();
+                command.Dispose();
+
+                banco.Disconnect();
+
+                return dados;
+            }
+            catch
+            {
+                banco.Disconnect();
+                return dados = "Erro ao tentar exucutar a query: \"" + command.CommandText.ToString() + "\".";
+            }
+        }
 
         public bool Delete(string condicao)
         {

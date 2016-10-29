@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Interfaces
 {
-    public interface IPersist
+    public interface IManipulavel
     {
         bool Insert(string dados);
         bool Insert(string colunas, string dados);

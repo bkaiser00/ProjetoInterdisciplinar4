@@ -85,15 +85,15 @@ namespace Persistencia
         /// </summary>
         /// <param name="query">Query utilizada para persistir os dados no banco.</param>
         /// <returns>Uma lista com os dados persistidos.</returns>
-        public List<string> Select(string query)
+        public List<string> Select(string coluna, string table)
         {
-            try{
-                List<string> lista = new List<string>();
-                OracleCommand command = conn.CreateCommand();
-                command.CommandText = query;
+            List<string> lista = new List<string>();
+            OracleCommand command = conn.CreateCommand();
+            command.CommandText = "select " + coluna + " from " + table;
 
-                Conn();
-
+            Conn();
+            try
+            {
                 OracleDataReader reader = command.ExecuteReader();
                 if (reader.HasRows)
                 {
