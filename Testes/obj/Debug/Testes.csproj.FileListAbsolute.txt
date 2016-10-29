@@ -16,3 +16,5 @@ C:\Users\bruno\Documents\Visual Studio 2015\Projects\ProjetoInterdisciplinar4\Te
 C:\Users\bruno\Documents\Visual Studio 2015\Projects\ProjetoInterdisciplinar4\Testes\bin\Debug\Oracle.ManagedDataAccess.dll
 C:\Users\bruno\Documents\Visual Studio 2015\Projects\ProjetoInterdisciplinar4\Testes\bin\Debug\Persistencia.pdb
 C:\Users\bruno\Documents\Visual Studio 2015\Projects\ProjetoInterdisciplinar4\Testes\obj\Debug\Testes.csprojResolveAssemblyReference.cache
+C:\Users\bruno\Documents\Visual Studio 2015\Projects\ProjetoInterdisciplinar4\Testes\bin\Debug\Interfaces.dll
+C:\Users\bruno\Documents\Visual Studio 2015\Projects\ProjetoInterdisciplinar4\Testes\bin\Debug\Interfaces.pdb
