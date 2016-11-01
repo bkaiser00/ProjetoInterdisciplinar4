@@ -12,24 +12,28 @@ namespace Persistencia
     {
         private string connectionString;
         private OracleConnection conn;
-        
+        OracleCommand command;
+
         //Construtores da classe
         public DB()
         {
             connectionString = "Data Source=localhost:1521:xe;Persist Security Info=True;User ID=user_owner;Password=123456";
             conn = new OracleConnection();
+            command = conn.CreateCommand();
         }
 
         public DB(string connectionString)
         {
             this.connectionString = connectionString;
             conn = new OracleConnection();
+            command = conn.CreateCommand();
         }
 
         public DB(string dataSource, string user, string password) 
         {
             this.connectionString = "Data Source=" + dataSource + ";Persist Security Info=True;User ID="+user+";Password="+password;
             conn = new OracleConnection();
+            command = command = conn.CreateCommand();
         }
 
         /// <summary>
@@ -57,6 +61,7 @@ namespace Persistencia
         public string Disconnect()
         {
             conn.Close();
+            command.Dispose();
             conn.Dispose();
             return "Desconectado!";
         }
@@ -70,7 +75,6 @@ namespace Persistencia
         {
             try
             {
-                OracleCommand command = conn.CreateCommand();
                 command.CommandText = query;
                 return command.ExecuteScalar().ToString();
             }
@@ -88,7 +92,6 @@ namespace Persistencia
         public List<string> Select(string coluna, string table)
         {
             List<string> lista = new List<string>();
-            OracleCommand command = conn.CreateCommand();
             command.CommandText = "select " + coluna + " from " + table;
 
             Conn();
@@ -118,7 +121,7 @@ namespace Persistencia
             catch
             {
                 Disconnect();
-                return new List<string> { "Erro ao tentar exucutar a query: \"" + query + "\"." };
+                return new List<string> { "Erro ao tentar exucutar a query: \"" + command.CommandText.ToString() + "\"." };
             }
         }
 
@@ -128,7 +131,6 @@ namespace Persistencia
             {
                 Conn();
 
-                OracleCommand command = new OracleCommand();
                 command.CommandText = "insert into " + tabela + " values (" + dados + ")";
                 command.ExecuteNonQuery();
                 command.Dispose();
@@ -149,7 +151,6 @@ namespace Persistencia
             {
                 Conn();
 
-                OracleCommand command = new OracleCommand();
                 command.CommandText = "insert into " + tabela + " (" + colunas + ") values (" + dados + ")";
                 command.ExecuteNonQuery();
                 command.Dispose();
@@ -170,7 +171,6 @@ namespace Persistencia
             {
                 Conn();
 
-                OracleCommand command = new OracleCommand();
                 command.CommandText = "update " + tabela + " set (" + dados + ")";
                 command.ExecuteNonQuery();
                 command.Dispose();
@@ -191,7 +191,6 @@ namespace Persistencia
             {
                 Conn();
 
-                OracleCommand command = new OracleCommand();
                 command.CommandText = "update " + tabela + " set (" + dados + ") where " + condicao;
                 command.ExecuteNonQuery();
                 command.Dispose();
@@ -212,7 +211,6 @@ namespace Persistencia
             {
                 Conn();
 
-                OracleCommand command = new OracleCommand();
                 command.CommandText = "delete " + tabela + " where " + condicao;
                 command.ExecuteNonQuery();
                 command.Dispose();
@@ -226,5 +224,6 @@ namespace Persistencia
                 return false;
             }
         }
-    }
+        public OracleCommand Command { get; }
+    } 
 }

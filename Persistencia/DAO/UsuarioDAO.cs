@@ -23,26 +23,24 @@ namespace Persistencia
         public string SelectUsuario(string atribute, string value)
         {
             string dados = string.Empty;
-            OracleCommand command = conn.CreateCommand();
-            command.CommandText = "select * from usuario where " + atribute + " = " + value;
+            banco.Command.CommandText = "select * from usuario where " + atribute + " = " + value;
 
             banco.Conn();
 
             try
             {
-                OracleDataReader reader = command.ExecuteReader();
+                OracleDataReader reader = banco.Command.ExecuteReader();
                 if (reader.HasRows)
                 {
-                    dados = ("{0};{1};{2};{3};{4};{5}",reader.GetInt32(0),reader.GetString(1),reader.GetString(2),reader.GetString(3),reader.GetString(4),reader.GetString(5);
+                    dados = (reader.GetInt32(0) + ";" + reader.GetString(1) + ";" + reader.GetString(2) + ";" + reader.GetString(3) + ";" + reader.GetString(4) + ";" + reader.GetString(5));
                 }
                 else
                 {
-                    dados = "Nenhum dado encontrado!");
+                    dados = ("Nenhum dado encontrado!");
                 }
 
                 reader.Close();
                 reader.Dispose();
-                command.Dispose();
 
                 banco.Disconnect();
 
@@ -51,7 +49,7 @@ namespace Persistencia
             catch
             {
                 banco.Disconnect();
-                return dados = "Erro ao tentar exucutar a query: \"" + command.CommandText.ToString() + "\".";
+                return dados = "Erro ao tentar exucutar a query: \"" + banco.Command.CommandText.ToString() + "\".";
             }
         }
 

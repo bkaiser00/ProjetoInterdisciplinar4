@@ -29,3 +29,6 @@ C:\Users\joaon\Source\Repos\ProjetoInterdisciplinar42\Testes\bin\Debug\Oracle.Ma
 C:\Users\joaon\Source\Repos\ProjetoInterdisciplinar42\Testes\bin\Debug\Persistencia.pdb
 C:\Users\joaon\Source\Repos\ProjetoInterdisciplinar42\Testes\bin\Debug\Interfaces.pdb
 C:\Users\joaon\Source\Repos\ProjetoInterdisciplinar42\Testes\obj\Debug\Testes.csprojResolveAssemblyReference.cache
+C:\Users\ucl\Source\Repos\ProjetoInterdisciplinar4\Testes\bin\Debug\Testes.exe.config
+C:\Users\ucl\Source\Repos\ProjetoInterdisciplinar4\Testes\obj\Debug\Testes.exe
+C:\Users\ucl\Source\Repos\ProjetoInterdisciplinar4\Testes\obj\Debug\Testes.pdb
